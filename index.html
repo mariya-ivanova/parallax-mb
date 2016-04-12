@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Frontend</title>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+	<link href="css/style.css" rel="stylesheet">   	
+	<link href="css/scrollbox.css" rel="stylesheet"> 	
+
+	<script src="js/jquery-1.12.0.js"></script>	
+	<script src="js/jquery-cycle.js"></script>	
+<!--	<script src="bootstrap/js/bootstrap.js"></script>	-->
+	<script src="js/jquery.scrollbox.js"></script>
+	
+</head>
+
+<body>	
+<div class="container-fluid">	
+	<section id="screen1" name="screen1" class="row">	
+		<a class="logo" href="#screen2">ENTER</a>	
+	</section>
+	
+	<section id="screen2" name="screen2" class="row">
+		<a class="lang" href="#">
+			bg
+		</a>	
+		<div id="site-title">
+			<h5>Welcome to</h5>
+			<h1>Mimi & Bissi Website</h1>
+		</div>	
+		<div class="fixed-bottom comp-name">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+			<a class="video-link" href="#screen2-1">	
+				<span class="glyphicon glyphicon-triangle-right" aria-hidden="true">				
+			</a>
+			<a class="next" href="#screen4">Next page<br/>
+				<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+			</a>
+		</div>				
+	</section>
+	
+	<section id="screen2-1" name="screen2-1" class="row">
+	
+		<video width="80%" height="100%" controls>
+		  <source src="video.mp4" type="video/mp4">
+		  Your browser does not support the video tag.
+		</video>
+	
+	<!--	
+		<OBJECT CLASSID="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
+		CODEBASE="http://www.apple.com/qtactivex/qtplugin.cab" WIDTH="400" 
+		HEIGHT="180" >
+		<PARAM NAME="SRC" VALUE="video.mp4" />
+		<PARAM NAME="autoplay" VALUE="true" />
+		<EMBED SRC="video.mp4" TYPE="image/x-macpaint"
+		PLUGINSPAGE="http://www.apple.com/quicktime/download" WIDTH="640" 
+		HEIGHT="400" AUTOPLAY="true"></EMBED>
+		</OBJECT>		
+	-->	
+		
+		<a class="close-video" href="#screen2">
+			<img src="images/close_icn.png"/>
+		</a>		
+	</section>
+	
+	<section id="screen4" name="screen4" class="row">
+		<a class="lang" href="#">
+			bg
+		</a>	
+
+	<!-- Scrollbox images -->
+    <div id="demo5" class="scroll-img"> 	
+      <ul>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+        <li><img src="images/aloe.jpg" /></a></li>
+      </ul>
+    </div> 
+
+    <div id="demo5-btn" class="text-center">
+      <button class="btn" id="demo5-backward"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Backward</button>
+      <button class="btn" id="demo5-forward">Forward <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></button>
+    </div>	
+	<!-- End Scrollbox -->
+	
+		<div class="fixed-top dark-gray">	
+			<a class="prev " href="#screen2">
+				<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><br/>			
+				Previous page	
+			</a>		
+		</div>	
+		<div class="fixed-bottom light-red">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+			<a class="next" href="#">Next page<br/>
+				<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+			</a>
+		</div>				
+	</section>
+</div>
+
+<script>
+function setSectionHeight( ) {
+//	var $docHeight = $( document ).height();
+	var $windowHeight = $( window  ).height();	
+//	var $height = Math.max($docHeight, $windowHeight);
+	$( "section" ).height( $windowHeight );	
+}
+
+$( document ).ready( setSectionHeight );
+
+$('#demo5').scrollbox({
+  direction: 'h',
+  distance: 140
+});
+$('#demo5-backward').click(function () {
+  $('#demo5').trigger('backward');
+});
+$('#demo5-forward').click(function () {
+  $('#demo5').trigger('forward');
+});	
+</script>
+ 
+</body>
+</html>	
