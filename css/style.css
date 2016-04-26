@@ -21,8 +21,8 @@ section.row {
 
 .logo {
     margin: auto;
-    height: 160px; 
-    width: 160px; 	
+    width: 200px; 	
+    height: 100px; 	
     position: absolute;
     top: 0px; 
     left: 0px;
@@ -34,9 +34,9 @@ section.row {
 
 #site-title {
 	position: absolute;
-	top: 80px;
+	top: 40px;
 	left: 230px;
-	bottom: 240px;
+	bottom: 260px;
 }
 
 #site-title p {
@@ -44,10 +44,10 @@ section.row {
 }
 
 #site-title h1 {
-	font-size: 120px;
+	font-size: 100px;
 	word-break: normal;
 	display: table-caption;	
-	line-height: 88px;
+	line-height: 80px;
 	margin-top: 0px;
 }
 
