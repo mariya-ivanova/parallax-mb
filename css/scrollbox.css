@@ -2,10 +2,7 @@ body {
 /*  padding-bottom: 100px; */
   background-image: url(http://wmh.github.io/circular-slides-generator/static/img/noise.png);
 }
-h1, h2, h3 {
-  padding-top: 20px;
-  font-family: 'Amaranth', sans-serif;
-}
+
 .scroll-text {
 /*  width: 400px; */
   width: 100%;  
@@ -22,11 +19,17 @@ h1, h2, h3 {
 .scroll-text ul li {
   height: 1.5em;
 }
+
+/* mimi - fix for IE */
+#demo5 {
+	width: 1200px;
+	margin: 150px auto 0px auto;
+}
+
 .scroll-img {
-  margin-top: 150px; /* mimi */
 /*  width: 680px; */
+  width: 100%; 
   height: 142px; 
-  width: 100%;
   overflow: hidden;
   font-size: 0;
 }
@@ -44,15 +47,47 @@ h1, h2, h3 {
 }
 
 #demo5.scroll-img ul {
-  width: 1500px; 
+  width: 1500px;   
 }
 
 #demo5-btn {
 /*  width: 680px; */
+  width: 100%;
   padding-top: 10px;
 }
 
 #demo5 > div {
 	background-color: #ffffff;
+}
+
+/* mimi - fix for IE */
+@media screen and ( max-width: 1024px ){
+	#demo5 {
+		width: 980px; 
+	}
+}
+
+@media screen and ( max-width: 900px ){
+	#demo5 {
+		width: 880px; 
+	}
+}
+
+@media screen and ( max-width: 800px ){
+	#demo5 {
+		width: 780px; 
+	}
+}
+
+@media screen and ( max-width: 600px ){
+	#demo5 {
+		width: 680px; 
+	}
+}
+
+@media screen and ( max-width: 480px ){
+	#demo5 {
+		width: 460px; 
+	}
 }
 
