@@ -75,7 +75,7 @@ section.row {
 	background-color: #ee5511;
 	background-image: url('../images/background.png'); 
 	background-repeat: no-repeat;	
-	background-size: 40% 100%; 
+	background-size: contain; 
 	background-position: 220px 0;
 }
 
@@ -134,13 +134,12 @@ a.lang {
     height: 45px; 
     width: 45px; 
     position: absolute;
-	top: 0px;
+    margin-top: 0px;
     left: 0px;
-    bottom: 0px;
-	right: 0px;	
-	background: #2bd698;
-	padding: 15px 17px;
-	border-radius: 45px;
+    right: 0px;	
+    background: #2bd698;
+    padding: 15px 17px;
+    border-radius: 45px;
 }
 
 .close-video {
