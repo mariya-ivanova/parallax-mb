@@ -72,7 +72,7 @@ section.row {
 }
 
 #screen2 {
-	background-color: #ee5511;
+	background-color: #ff5500;
 	background-image: url('../images/background.png'); 
 	background-repeat: no-repeat;	
 	background-size: contain; 
@@ -137,7 +137,7 @@ a.lang {
     margin-top: 0px;
     left: 0px;
     right: 0px;	
-    background: #2bd698;
+    background: #11a000;
     padding: 15px 17px;
     border-radius: 45px;
 }
@@ -170,7 +170,7 @@ a.close-video {
 
 .light-red {
 	color: #252525;
-	background: #ee5511;
+	background: #ff5500;
 }
 
 .dark-gray {
