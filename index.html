@@ -10,7 +10,11 @@
 	<link href="css/style.css" rel="stylesheet">   	
 	<link href="css/scrollbox.css" rel="stylesheet"> 	
 
-	<script src="js/jquery-1.12.0.js"></script>	
+	<script
+	  src="https://code.jquery.com/jquery-3.5.1.js"
+	  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  crossorigin="anonymous">
+  	</script>	
 	<script src="js/jquery-cycle.js"></script>	
 <!--	<script src="bootstrap/js/bootstrap.js"></script>	-->
 	<script src="js/jquery.scrollbox.js"></script>
@@ -117,21 +121,21 @@
 
 <script>
 function setSectionHeight( ) {
-//	var $docHeight = $( document ).height();
-	var $windowHeight = $( window  ).height();	
-//	var $height = Math.max($docHeight, $windowHeight);
-	$( "section" ).height( $windowHeight );	
+    var viewportHeight = document.documentElement.clientHeight;
+    $("section").height(viewportHeight);	
 }
 
-$( document ).ready( setSectionHeight );
+$(document).ready( setSectionHeight );
 
 $('#demo5').scrollbox({
   direction: 'h',
   distance: 140
 });
+	
 $('#demo5-backward').click(function () {
   $('#demo5').trigger('backward');
 });
+	
 $('#demo5-forward').click(function () {
   $('#demo5').trigger('forward');
 });	
